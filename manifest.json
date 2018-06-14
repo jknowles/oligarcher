@@ -1,0 +1,22 @@
+{
+"manifest_version": 2,
+    "name": "Oligarcher",
+    "description": "Replace the word billionaire with the word oligarch.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "applications": {
+        "gecko": {
+            "id": "jknowles+addon@gmail.com"
+        }
+    }
+}
